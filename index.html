@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Hari Ide Konten Personal Growth & Mindset</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background-color: var(--card-bg);
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--accent-gradient);
+            color: var(--bg-color);
+            border-color: transparent;
+        }
+
+        .content-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-color: var(--accent);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .card-number {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .badge.growing { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+        .badge.emotional { background: rgba(244, 63, 94, 0.15); color: #f43f5e; }
+        .badge.family { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+        .badge.funfact { background: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+
+        .script-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-left: 4px solid var(--accent);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 15px;
+        }
+
+        .script-box h4, .caption-box h4 {
+            margin: 0 0 8px 0;
+            color: var(--accent);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .script-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        .script-list li {
+            margin-bottom: 4px;
+        }
+
+        .caption-box {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px dashed var(--border);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>30 Hari Pustaka Konten Kreator</h1>
+        <p>Kumpulan skrip 8 kalimat dan riset caption untuk Personal Growth, Emosional, Keluarga, & Fun Fact.</p>
+    </header>
+
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterCategory('all')">Semua</button>
+        <button class="filter-btn" onclick="filterCategory('growing')">Growing</button>
+        <button class="filter-btn" onclick="filterCategory('emotional')">Emotional</button>
+        <button class="filter-btn" onclick="filterCategory('family')">Family</button>
+        <button class="filter-btn" onclick="filterCategory('funfact')">Fun Fact</button>
+    </div>
+
+    <div class="content-grid" id="contentGrid">
+        <!-- Konten 1: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #01</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Hasil instan jarang bertahan lama.</li>
+                    <li>Sesuatu yang dibangun perlahan justru jauh lebih kuat.</li>
+                    <li>Nikmati setiap prosesnya meski terasa membosankan.</li>
+                    <li>Di titik lelah itulah karaktermu dibentuk.</li>
+                    <li>Jangan cuma mengejar hasil akhir semata.</li>
+                    <li>Proses yang benar bikin kamu pantas menerimanya.</li>
+                    <li>Kalau instan, biasanya cepat juga hilangnya.</li>
+                    <li>Pertumbuhan sejati adalah mental yang kamu bawa terus.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Berdasarkan riset psikologi perilaku (Duhigg, <i>The Power of Habit</i>), jalur saraf di otak butuh pengulangan konsisten untuk membentuk memori permanen. Jalan pintas hanya menciptakan fondasi rapuh.</p>
+            </div>
+        </div>
+
+        <!-- Konten 2: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #02</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Lelah itu wajar, menyerah itu pilihan.</li>
+                    <li>Hari ini dunia terasa berat di pundakmu.</li>
+                    <li>Ingat lagi alasan kenapa kamu mulai dari awal.</li>
+                    <li>Tidak apa-apa menangis sebentar untuk melonggarkan dada.</li>
+                    <li>Tapi jangan pernah biarkan tangisan menghentikan langkahmu.</li>
+                    <li>Badai paling kencang pun pasti akan berlalu.</li>
+                    <li>Kamu jauh lebih kuat dari apa yang kamu bayangkan.</li>
+                    <li>Besok matahari akan terbit dan kamu punya kesempatan lagi.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Jurnal kesehatan mental menunjukkan bahwa memvalidasi emosi negatif (bukan menekannya) justru menurunkan tingkat hormon kortisol secara drastis dalam 20 menit pertama.</p>
+            </div>
+        </div>
+
+        <!-- Konten 3: Family -->
+        <div class="card" data-category="family">
+            <div class="card-header">
+                <span class="card-number">Konten #03</span>
+                <span class="badge family">Family</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Kita sering lupa pada rumah saat dunia luar memanggil.</li>
+                    <li>Padahal di sanalah tempat paling tulus menerima kita.</li>
+                    <li>Orang tua kita semakin menua setiap harinya.</li>
+                    <li>Waktu bersama mereka tidak sebanyak yang kita kira.</li>
+                    <li>Kurangi gengsi untuk sekadar menelpon atau menyapa.</li>
+                    <li>Pelukan ibu atau tawa ayah adalah obat lelah terbaik.</li>
+                    <li>Jangan tunggu kehilangan baru menyesal di kemudian hari.</li>
+                    <li>Pulanglah, atau setidaknya luangkan waktu untuk mereka.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Studi Harvard tentang kebahagiaan manusia yang berjalan selama 85 tahun menyimpulkan bahwa kualitas hubungan keluarga dan orang terdekat adalah faktor nomor satu penentu umur panjang dan kesehatan mental.</p>
+            </div>
+        </div>
+
+        <!-- Konten 4: Fun Fact -->
+        <div class="card" data-category="funfact">
+            <div class="card-header">
+                <span class="card-number">Konten #04</span>
+                <span class="badge funfact">Fun Fact</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Otak manusia membakar kalori paling banyak saat tidur.</li>
+                    <li>Saat kita bermimpi, otak bekerja keras menyortir memori.</li>
+                    <li>Makanya kurang tidur bikin fokus dan emosi berantakan.</li>
+                    <li>Ini fakta sains yang sering diabaikan anak muda.</li>
+                    <li>Begadang demi produktivitas itu sebenarnya ilusi belaka.</li>
+                    <li>Kinerja otak turun drastis setara orang mabuk jika kurang tidur.</li>
+                    <li>Mulai hari ini, hargai waktu istirahat tubuhmu.</li>
+                    <li>Tidur cukup adalah investasi kecerdasan terbaik.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Menurut riset dari *Matthew Walker* (pakar saraf asal UC Berkeley), sistem glymphatic di otak aktif membersihkan racun saraf (termasuk pemicu Alzheimer) secara maksimal hanya saat kita tidur nyenyak.</p>
+            </div>
+        </div>
+
+        <!-- Konten 5: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #05</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Gagal ujian bukan berarti hidupmu tamat.</li>
+                    <li>Itu cuma tanda kalau caramu belajar perlu diperbaiki.</li>
+                    <li>Orang sukses punya tumpukan kegagalan yang lebih banyak.</li>
+                    <li>Bedanya, mereka bangkit dan tidak mencari alasan.</li>
+                    <li>Setiap kesalahan adalah data gratis untuk sukses masa depan.</li>
+                    <li>Jangan takut salah di awal perjalananmu.</li>
+                    <li>Takut mencoba adalah satu-satunya kegagalan sejati.</li>
+                    <li>Evaluasi dirimu dan mulailah melangkah lagi hari ini.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Konsep *Growth Mindset* oleh Carol Dweck membuktikan bahwa individu yang memandang kegagalan sebagai proses belajar memiliki performa akademik dan karier yang jauh lebih tinggi jangka panjang.</p>
+            </div>
+        </div>
+
+        <!-- Konten 6: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #06</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Pernahkah merasa tertinggal dari teman-teman sebayamu?</li>
+                    <li>Media sosial membuat standar hidup jadi tidak masuk akal.</li>
+                    <li>Semua orang pamer pencapaian, menyembunyikan proses jatuh bangun.</li>
+                    <li>Padahal setiap pohon punya musim berbuahnya sendiri.</li>
+                    <li>Jangan bandingkan babak pertama hidupmu dengan babak sepuluh mereka.</li>
+                    <li>Fokus saja pada garis waktu dan kecepatan dirimu sendiri.</li>
+                    <li>Kamu tidak terlambat, kamu sedang berada di jalur yang pas.</li>
+                    <li>Tarik napas, nikmati proses unik yang sedang Tuhan rancang.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Fenomena psikologis *Social Comparison Theory* menunjukkan bahwa membandingkan diri secara konstan di media sosial memicu kecemasan dan depresi klinis pada usia produktif.</p>
+            </div>
+        </div>
+
+        <!-- Konten 7: Family -->
+        <div class="card" data-category="family">
+            <div class="card-header">
+                <span class="card-number">Konten #07</span>
+                <span class="badge family">Family</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Rumah bukan sekadar bangunan beratap beton.</li>
+                    <li>Rumah adalah tempat di mana kamu bisa menjadi diri sendiri.</li>
+                    <li>Tanpa harus memakai topeng pencitraan di depan orang lain.</li>
+                    <li>Saat di luar kamu dihantam kerasnya dunia...</li>
+                    <li>Keluarga adalah tempat perlindungan dan ketenangan jiwa.</li>
+                    <li>Ucapkan terima kasih pada mereka yang selalu mendoakanmu diam-diam.</li>
+                    <li>Karena restu orang tua adalah bahan bakar rahasia kesuksesan.</li>
+                    <li>Hargai mereka selagi masih membersamai langkahmu.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Dukungan emosional dari lingkungan keluarga inti terbukti mempercepat masa pemulihan fisik seseorang dari stres kronis hingga 40% lebih cepat.</p>
+            </div>
+        </div>
+
+        <!-- Konten 8: Fun Fact -->
+        <div class="card" data-category="funfact">
+            <div class="card-header">
+                <span class="card-number">Konten #08</span>
+                <span class="badge funfact">Fun Fact</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Tahukah kamu kenapa senyum bisa menipu otak?</li>
+                    <li>Meskipun terpaksa, otot wajah yang tersenyum mengirim sinyal kebahagiaan.</li>
+                    <li>Otak mengira kita sedang senang dan melepaskan hormon dopamin.</li>
+                    <li>Teknik sederhana ini terbukti menurunkan tingkat stres seketika.</li>
+                    <li>Jadi saat harimu berat, cobalah tersenyum di depan cermin.</li>
+                    <li>Tubuhmu punya mekanisme penyembuhan alami yang luar biasa.</li>
+                    <li>Sains membuktikan pikiran dan fisik saling terhubung erat.</li>
+                    <li>Gunakan tubuhmu untuk mengubah suasana hatimu hari ini.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Teori *Facial Feedback Hypothesis* dalam psikologi sosial menunjukkan ekspresi wajah secara sadar dapat memodulasi pengalaman emosional internal seseorang secara nyata.</p>
+            </div>
+        </div>
+
+        <!-- Konten 9: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #09</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Disiplin bukan berarti mengekang kebebasanmu.</li>
+                    <li>Disiplin adalah bentuk rasa sayang pada masa depanmu.</li>
+                    <li>Orang yang bebas adalah mereka yang mampu mengontrol diri sendiri.</li>
+                    <li>Bukan mereka yang menuruti setiap hawa nafsu sesaat.</li>
+                    <li>Pilih rasa sakit karena disiplin, bukan rasa sakit karena penyesalan.</li>
+                    <li>Waktu terus berjalan tanpa menunggu kamu siap.</li>
+                    <li>Bangun sistem harian yang mendukung mimpimu.</li>
+                    <li>Konsistensi kecil hari ini adalah raksasa di masa depan.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Riset *Marshmallow Test* klasik tentang penundaan kepuasan (*delayed gratification*) membuktikan bahwa anak muda yang memiliki kontrol diri tinggi memiliki tingkat kesuksesan finansial dan karier yang jauh lebih baik di masa depan.</p>
+            </div>
+        </div>
+
+        <!-- Konten 10: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #10</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Ada hari di mana kamu merasa tidak berguna sama sekali.</li>
+                    <li>Suara di kepala terus menghakimi setiap keputusanmu.</li>
+                    <li>Ketahuilah, kritikus paling kejam di dunia ini adalah dirimu sendiri.</li>
+                    <li>Belajarlah memaafkan kesalahan masa lalu yang sudah berlalu.</li>
+                    <li>Kamu sudah berjuang sejauh ini, hargai dirimu sebentar saja.</li>
+                    <li>Tepuk pundakmu sendiri dan katakan kamu sudah hebat.</li>
+                    <li>Hari esok adalah lembaran baru yang bersih.</li>
+                    <li>Jangan biarkan bayang-bayang kemarin merusak indahnya hari ini.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Psikolog *Kristin Neff* menemukan bahwa *self-compassion* (belas kasih pada diri sendiri) jauh lebih efektif memotivasi seseorang bangkit dari kegagalan ketimbang sikap menghakimi diri sendiri (*self-criticism*).</p>
+            </div>
+        </div>
+
+        <!-- Konten 11: Family -->
+        <div class="card" data-category="family">
+            <div class="card-header">
+                <span class="card-number">Konten #11</span>
+                <span class="badge family">Family</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Pertengkaran kecil dengan saudara kandung sering kita sesali nanti.</li>
+                    <li>Saat masing-masing sudah sibuk dengan jalan hidup sendiri.</li>
+                    <li>Ingat masa kecil saat kita berbagi mainan dan mimpi bersama?</li>
+                    <li>Waktu merubah segalanya, tapi ikatan darah tidak akan putus.</li>
+                    <li>Hubungi kakak atau adikmu hari ini tanpa alasan khusus.</li>
+                    <li>Tanyakan kabar mereka di tengah kesibukan harianmu.</li>
+                    <li>Keluarga adalah aset emosional paling berharga di dunia.</li>
+                    <li>Jaga keharmonisan sebelum jarak memisahkan selamanya.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Data demografi menunjukkan dukungan sosial dari saudara kandung di usia paruh baya dan tua berperan besar dalam meredakan tingkat kesepian dan kepikunan.</p>
+            </div>
+        </div>
+
+        <!-- Konten 12: Fun Fact -->
+        <div class="card" data-category="funfact">
+            <div class="card-header">
+                <span class="card-number">Konten #12</span>
+                <span class="badge funfact">Fun Fact</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Tahukah kamu warna biru pada ruangan bisa menurunkan tekanan darah?</li>
+                    <li>Sains membuktikan warna lingkungan memengaruhi suasana hati manusia.</li>
+                    <li>Makanya ruang kerja yang rapi dan tenang meningkatkan fokus belajar.</li>
+                    <li>Lingkungan fisik di sekitarmu adalah cerminan isi kepalamu.</li>
+                    <li>Jika kamarmu berantakan, pikiranmu cenderung ikut kacau.</li>
+                    <li>Rapikan mejamu hari ini untuk menjernihkan pikiran.</li>
+                    <li>Perubahan kecil di luar berdampak besar pada mental di dalam.</li>
+                    <li>Desain ruang hidupmu untuk mendukung produktivitas maksimal.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Studi arsitektur perilaku menunjukkan bahwa tingkat kekacauan visual (*visual clutter*) di tempat kerja meningkatkan beban kognitif otak sehingga mempercepat kelelahan mental.</p>
+            </div>
+        </div>
+
+        <!-- Konten 13: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #13</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Membaca buku 10 halaman sehari terdengar sepele.</li>
+                    <li>Tapi dalam setahun terkumpul ribuan halaman ilmu baru.</li>
+                    <li>Inilah keajaiban dari kekuatan efek majemuk (*compound effect*).</li>
+                    <li>Orang hebat tidak langsung jadi ahli dalam semalam.</li>
+                    <li>Mereka menumpuk kebiasaan kecil secara konsisten bertahun-tahun.</li>
+                    <li>Jangan meremehkan langkah kecil yang kamu lakukan hari ini.</li>
+                    <li>Akumulasi hal kecil melahirkan perubahan hidup yang masif.</li>
+                    <li>Mulailah membaca atau belajar satu hal baru sekarang juga.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Buku *Atomic Habits* oleh James Clear menjelaskan bahwa peningkatan 1% setiap hari selama setahun akan membuat seseorang menjadi 37 kali lipat lebih baik di akhir tahun.</p>
+            </div>
+        </div>
+
+        <!-- Konten 14: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #14</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Rasa cemas datang saat kita terlalu memikirkan masa depan.</li>
+                    <li>Rasa penyesalan muncul saat kita terjebak di masa lalu.</li>
+                    <li>Ketenangan sejati hanya ada di saat ini, di detik ini.</li>
+                    <li>Tarik napas dalam-dalam dan rasakan udara mengisi dadamu.</li>
+                    <li>Hanya hari ini yang benar-benar bisa kita kendalikan.</li>
+                    <li>Lepaskan beban esok hari yang belum tentu terjadi.</li>
+                    <li>Fokus menuntaskan apa yang ada di depan matamu sekarang.</li>
+                    <li>Hidup di masa kini adalah bentuk syukur paling tinggi.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Latihan kesadaran penuh (*mindfulness*) terbukti secara klinis menebalkan bagian korteks prefrontal otak yang mengatur regulasi emosi dan meredakan aktivitas amigdala pencetus kecemasan.</p>
+            </div>
+        </div>
+
+        <!-- Konten 15: Family -->
+        <div class="card" data-category="family">
+            <div class="card-header">
+                <span class="card-number">Konten #15</span>
+                <span class="badge family">Family</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Pernahkah mendengarkan cerita masa muda orang tuamu?</li>
+                    <li>Di balik kerutan di wajah mereka, tersimpan perjuangan luar biasa.</li>
+                    <li>Mereka merelakan mimpi-mimpinya agar kita bisa terbang tinggi.</li>
+                    <li>Jangan pernah merasa paling berjasa atas hidupmu saat ini.</li>
+                    <li>Ada doa ibu dan cucuran keringat ayah di setiap langkahmu.</li>
+                    <li>Bahagiakan mereka sebelum waktu membatasi kesempatan itu.</li>
+                    <li>Surga kecil ada di senyuman tulus kedua orang tua.</li>
+                    <li>Pulang dan peluk mereka selagi masih ada kesempatan.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Psikologi keluarga mencatat bahwa anak-anak yang memiliki ikatan batin kuat dengan orang tua menunjukkan ketahanan mental (*resilience*) yang jauh lebih tinggi saat menghadapi tekanan hidup dewasa.</p>
+            </div>
+        </div>
+
+        <!-- Konten 16: Fun Fact -->
+        <div class="card" data-category="funfact">
+            <div class="card-header">
+                <span class="card-number">Konten #16</span>
+                <span class="badge funfact">Fun Fact</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Tahukah kamu air putih adalah booster energi terbaik?</li>
+                    <li>Dehidrasi ringan saja sudah cukup membuat otakmu lambat berpikir.</li>
+                    <li>Sering merasa pusing atau lemas saat bekerja di depan laptop?</li>
+                    <li>Bisa jadi otakmu hanya kehausan, bukan kekurangan kafein.</li>
+                    <li>Minumlah segelas air putih sebelum menyentuh kopi pagi.</li>
+                    <li>Tubuh manusia dewasa terdiri dari 60% cairan air.</li>
+                    <li>Kinerja sel saraf sangat bergantung pada kecukupan hidrasi.</li>
+                    <li>Rawat tubuhmu agar pikiranmu tetap tajam dan jernih.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Studi neurosaintifik dari Universitas London membuktikan bahwa konsumsi air putih pada orang yang haus mampu meningkatkan kecepatan reaksi kognitif otak hingga 14%.</p>
+            </div>
+        </div>
+
+        <!-- Konten 17: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #17</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Lingkaran pertemananmu menentukan masa depanmu.</li>
+                    <li>Kamu adalah rata-rata dari lima orang terdekatmu.</li>
+                    <li>Jika temanmu ambisius, kamu ketularan semangat mereka.</li>
+                    <li>Jika temanmu suka mengeluh, energimu pasti terkuras habis.</li>
+                    <li>Pilih dengan siapa kamu menghabiskan waktu utamamu.</li>
+                    <li>Berani batasi akses orang yang membawa energi negatif.</li>
+                    <li>Kelilingi diri dengan orang yang menaikkan standar hidupmu.</li>
+                    <li>Pertumbuhan butuh ekosistem yang sehat dan mendukung.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Sosiolog *Dr. David McClelland* dari Harvard menemukan bahwa asosiasi kelompok menyumbang hingga 95% dari kesuksesan atau kegagalan seseorang dalam jangka panjang.</p>
+            </div>
+        </div>
+
+        <!-- Konten 18: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #18</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Menolak ajakan orang lain bukan berarti kamu egois.</li>
+                    <li>Itu adalah cara sehat menjaga batas energi mentalmu.</li>
+                    <li>Kamu tidak harus selalu hadir di setiap tempat dan keadaan.</li>
+                    <li>Kesehatan batinmu jauh lebih penting dari validasi sosial.</li>
+                    <li>Belajarlah berkata tidak pada hal yang menguras kewarasan.</li>
+                    <li>Waktu istirahatmu adalah hak mutlak yang harus dijaga.</li>
+                    <li>Orang yang benar-benar peduli akan menghargai batasanmu.</li>
+                    <li>Sayangi dirimu sebelum mencoba menyelamatkan dunia luar.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Psikologi klinis mendefinisikan *boundaries* (batasan diri) sebagai fondasi utama pencegahan *burnout* kronis dan kelelahan empati pada generasi muda.</p>
+            </div>
+        </div>
+
+        <!-- Konten 19: Family -->
+        <div class="card" data-category="family">
+            <div class="card-header">
+                <span class="card-number">Konten #19</span>
+                <span class="badge family">Family</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Rumah terbaik adalah di mana kamu bisa menjadi dirimu apa adanya.</li>
+                    <li>Tanpa takut dihakimi oleh orang-orang serumah.</li>
+                    <li>Keluarga tempat kita belajar mencintai tanpa syarat.</li>
+                    <li>Meskipun banyak perbedaan pendapat yang sering terjadi.</li>
+                    <li>Di akhir hari, mereka adalah tempat kita kembali pulang.</li>
+                    <li>Maafkan kesalahan kecil anggota keluargamu.</li>
+                    <li>Hidup terlalu singkat untuk menyimpan benci pada darah daging sendiri.</li>
+                    <li>Ciptakan kenangan hangat selagi mereka masih ada di sisi.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Penelitian psikologi keluarga menunjukkan bahwa pengampunan timbal balik antar anggota keluarga inti adalah prediktor terkuat kesejahteraan psikologis di usia senja.</p>
+            </div>
+        </div>
+
+        <!-- Konten 20: Fun Fact -->
+        <div class="card" data-category="funfact">
+            <div class="card-header">
+                <span class="card-number">Konten #20</span>
+                <span class="badge funfact">Fun Fact</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Menulis jurnal tangan ternyata membakar stres lebih cepat.</li>
+                    <li>Gerakan motorik halus saat menulis menurunkan aktivitas amigdala.</li>
+                    <li>Pikiran yang kusut butuh media kertas untuk terurai rapi.</li>
+                    <li>Jangan simpan semua masalah sendirian di dalam kepala.</li>
+                    <li>Tumpahkan unek-unekmu di atas selembar kertas kosong malam ini.</li>
+                    <li>Kamu akan takjub betapa leganya perasaan setelahnya.</li>
+                    <li>Terapi menulis adalah psikolog gratis bagi siapa saja.</li>
+                    <li>Mulai kebiasaan baik ini sebelum tidur malam.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Penelitian dari *Dr. James Pennebaker* membuktikan bahwa *expressive writing* selama 15 menit berturut-turut meningkatkan fungsi kekebalan tubuh dan menurunkan tingkat stres mental secara signifikan.</p>
+            </div>
+        </div>
+
+        <!-- Konten 21: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #21</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Rasa malas adalah sinyal bahwa tujuanmu kurang menantang.</li>
+                    <li>Atau tubuhmu kehabisan bahan bakar karena pola hidup buruk.</li>
+                    <li>Jangan salahkan diri saat malas, cari akar masalahnya.</li>
+                    <li>Apakah tidurmu kurang? Apakah makananmu tidak sehat?</li>
+                    <li>Atau kamu sedang mengerjakan hal yang tidak kamu sukai?</li>
+                    <li>Perbaiki fondasi fisik sebelum menuntut mental bekerja keras.</li>
+                    <li>Disiplin lahir dari tubuh yang bugar dan pikiran yang jelas.</li>
+                    <li>Atur ulang strategimu dan mulailah bergerak lagi.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Neurobiologi motivasi menunjukkan bahwa kelelahan dopamin (*dopamine detox needed*) sering disalahartikan sebagai kemalasan kronis akibat stimulasi gawai yang berlebihan.</p>
+            </div>
+        </div>
+
+        <!-- Konten 22: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #22</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Kehilangan arah di usia 20-an adalah hal yang normal.</li>
+                    <li>Jangan panik melihat orang lain sudah mapan lebih dulu.</li>
+                    <li>Setiap bunga mekar di musimnya masing-masing.</li>
+                    <li>Masa muda adalah waktu untuk mencoba dan gagal berkali-kali.</li>
+                    <li>Dari situlah kamu menemukan siapa dirimu sebenarnya.</li>
+                    <li>Proses pencarian jati diri memang tidak pernah instan.</li>
+                    <li>Nikmati kebingungan ini sebagai bagian dari petualangan hidup.</li>
+                    <li>Kamu sedang bertumbuh menjadi versi terbaik dirimu.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Konsep psikologi perkembangan *Quarter-Life Crisis* dialami oleh hampir 80% anak muda usia 20 hingga 29 tahun sebagai fase transisi krusial menuju kematangan identitas diri.</p>
+            </div>
+        </div>
+
+        <!-- Konten 23: Family -->
+        <div class="card" data-category="family">
+            <div class="card-header">
+                <span class="card-number">Konten #23</span>
+                <span class="badge family">Family</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Didikan keras orang tua dulu mungkin terasa menyakitkan.</li>
+                    <li>Tapi seiring berjalan waktu, kita mengerti maksud di baliknya.</li>
+                    <li>Mereka ingin kita siap menghadapi dunia yang kejam di luar sana.</li>
+                    <li>Maafkan ketidaksempurnaan mereka dalam mendidik kita.</li>
+                    <li>Karena mereka juga manusia biasa yang baru pertama kali jadi orang tua.</li>
+                    <li>Kirim pesan terima kasih pada mereka hari ini.</li>
+                    <li>Berbaktilah selagi pintu surga itu masih terbuka lebar.</li>
+                    <li>Doa mereka adalah perisai paling kuat dalam hidupmu.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Studi psikologi antargenerasi menunjukkan rekonsiliasi emosional dengan pola asuh orang tua di masa lalu membebaskan seseorang dari beban trauma psikologis berkepanjangan.</p>
+            </div>
+        </div>
+
+        <!-- Konten 24: Fun Fact -->
+        <div class="card" data-category="funfact">
+            <div class="card-header">
+                <span class="card-number">Konten #24</span>
+                <span class="badge funfact">Fun Fact</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Berjalan kaki 15 menit sehari bisa memicu ide-ide kreatif.</li>
+                    <li>Sains membuktikan gerakan fisik melancarkan aliran darah ke otak.</li>
+                    <li>Banyak penemu hebat dunia hobi berjalan kaki saat memikirkan solusi.</li>
+                    <li>Jika jalan buntu di depan laptop, tutup layarnya.</li>
+                    <li>Keluar ruangan dan berjalanlah tanpa melihat ponsel.</li>
+                    <li>Biarkan pikiranmu mengalir bebas bersama langkah kakimu.</li>
+                    <li>Solusi terbaik sering muncul saat kita berhenti memaksakannya.</li>
+                    <li>Gerakkan tubuhmu untuk menyegarkan kembali isi kepalamu.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Penelitian dari Stanford University menunjukkan kreativitas seseorang meningkat rata-rata 60% selama dan sesudah melakukan aktivitas berjalan kaki secara rutin.</p>
+            </div>
+        </div>
+
+        <!-- Konten 25: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #25</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Kritik pedas orang lain adalah vitamin penumbuh mental.</li>
+                    <li>Pujian manis justru bisa membuatmu terlena dan sombong.</li>
+                    <li>Terima masukan dengan kepala dingin, saring pesannya.</li>
+                    <li>Jangan baper pada pendapat orang yang tidak tahu perjuanganmu.</li>
+                    <li>Gunakan kebencian mereka sebagai bahan bakar roket kesuksesanmu.</li>
+                    <li>Buktikan dengan karya nyata, bukan dengan debat kusir di media sosial.</li>
+                    <li>Pemenang sejati fokus pada perbaikan diri, bukan balas dendam.</li>
+                    <li>Biarkan prestasimu yang berbicara paling lantang.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Prinsip *Antifragile* oleh Nassim Taleb menjelaskan bahwa sistem dan manusia terbaik justru tumbuh semakin kuat saat menghadapi tekanan, kritikus, dan kekacauan eksternal.</p>
+            </div>
+        </div>
+
+        <!-- Konten 26: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #26</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Melepaskan seseorang yang toxic adalah bentuk cinta pada diri sendiri.</li>
+                    <li>Pertemanan yang memaksamu berubah menjadi bukan dirimu...</li>
+                    <li>Hanyalah rantai besi yang menahan langkah kakimu terbang tinggi.</li>
+                    <li>Jangan takut merasa sepi untuk sementara waktu.</li>
+                    <li>Kesendirian jauh lebih baik daripada dikelilingi orang palsu.</li>
+                    <li>Ruang kosong di hidupmu akan diisi oleh orang yang tepat nanti.</li>
+                    <li>Pilih kualitas hubungan di atas kuantitas jumlah teman.</li>
+                    <li>Hiduplah dengan damai bersama prinsip yang kamu pegang.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Psikologi relasi sosial mencatat bahwa mempertahankan hubungan yang tidak sehat (*toxic relationships*) memicu peradangan sel tubuh kronis akibat stres emosional berkepanjangan.</p>
+            </div>
+        </div>
+
+        <!-- Konten 27: Family -->
+        <div class="card" data-category="family">
+            <div class="card-header">
+                <span class="card-number">Konten #27</span>
+                <span class="badge family">Family</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Makan malam bersama keluarga adalah kemewahan di era modern.</li>
+                    <li>Semua sibuk dengan layar gawai masing-masing di meja makan.</li>
+                    <li>Letakkan ponselmu dan tatap mata orang tersayang di sebelahmu.</li>
+                    <li>Dengarkan cerita hari mereka tanpa terdistraksi notifikasi.</li>
+                    <li>Kehangatan keluarga tidak bisa digantikan oleh ribuan followers.</li>
+                    <li>Bangun memori indah yang akan dikenang saat mereka tiada.</li>
+                    <li>Waktu bersama adalah hadiah paling mahal yang bisa diberikan.</li>
+                    <li>Hargai momen kebersamaan ini mulai malam ini juga.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Studi komunikasi digital membuktikan kehadiran gawai di tengah percetakan keluarga (*phubbing*) menurunkan tingkat keintiman emosional dan kepuasan hubungan hingga 50%.</p>
+            </div>
+        </div>
+
+        <!-- Konten 28: Fun Fact -->
+        <div class="card" data-category="funfact">
+            <div class="card-header">
+                <span class="card-number">Konten #28</span>
+                <span class="badge funfact">Fun Fact</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Tahukah kamu otak kita menghabiskan 20% energi tubuh?</li>
+                    <li>Meskipun beratnya hanya sekitar 2 persen dari total berat badan.</li>
+                    <li>Berpikir keras dan belajar hal baru benar-benar membakar kalori.</li>
+                    <li>Makanya kamu merasa lapar setelah seharian ujian atau belajar.</li>
+                    <li>Otak adalah organ paling boros energi di dalam tubuh kita.</li>
+                    <li>Beri nutrisi terbaik dan istirahat cukup agar kinerjanya optimal.</li>
+                    <li>Investasi pada kesehatan otak adalah investasi masa depan.</li>
+                    <li>Jaga pikiranmu tetap tajam dengan terus belajar setiap hari.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Neurosaintifik mendokumentasikan bahwa glukosa adalah bahan bakar utama otak, dan aktivitas kognitif intensif mengonsumsi cadangan energi glukosa secara cepat pada area korteks.</p>
+            </div>
+        </div>
+
+        <!-- Konten 29: Growing -->
+        <div class="card" data-category="growing">
+            <div class="card-header">
+                <span class="card-number">Konten #29</span>
+                <span class="badge growing">Growing</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Jangan menunggu motivasi datang baru kamu mulai bergerak.</li>
+                    <li>Motivasi itu mitos, dia datang setelah kamu mulai melangkah.</li>
+                    <li>Tindakan kecil memicu momentum, momentum melahirkan motivasi.</li>
+                    <li>Mulailah selama 5 menit saja, biarkan aksi mengalahkan malas.</li>
+                    <li>Hari ini tentukan satu hal penting yang harus diselesaikan.</li>
+                    <li>Jangan beri ruang pada alasan penundaan yang tidak perlu.</li>
+                    <li>Selesaikan tugasmu sebelum hari berganti malam.</li>
+                    <li>Aksi nyata adalah satu-satunya pembeda antara mimpi dan realita.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Psikolog *Mel Robbins* mempopulerkan aturan *The 5 Second Rule* yang membuktikan bahwa menghitung mundur 5-4-3-2-1 mampu memotong keraguan di otak sebelum korteks prefrontal menciptakan alasan untuk menunda.</p>
+            </div>
+        </div>
+
+        <!-- Konten 30: Emotional -->
+        <div class="card" data-category="emotional">
+            <div class="card-header">
+                <span class="card-number">Konten #30</span>
+                <span class="badge emotional">Emotional</span>
+            </div>
+            <div class="script-box">
+                <h4>Skrip Video (8 Kalimat)</h4>
+                <ol class="script-list">
+                    <li>Jika hari ini adalah hari terakhirmu di dunia ini...</li>
+                    <li>Apakah kamu bangga dengan apa yang sudah kamu lakukan?</li>
+                    <li>Pertanyaan ini menampar ego kita untuk hidup lebih sadar.</li>
+                    <li>Berhenti membuang waktu pada hal-hal remeh yang tidak penting.</li>
+                    <li>Kejar mimpimu dengan berani sebelum waktu habis tersita.</li>
+                    <li>Jadilah versi terbaik yang membuat dirimu sendiri bangga.</li>
+                    <li>Hidup cuma sekali, pastikan kau menjalaninya tanpa penyesalan.</li>
+                    <li>Mulailah menulis kisah hebatmu dari detik ini juga.</li>
+                </ol>
+            </div>
+            <div class="caption-box">
+                <h4>Caption & Riset</h4>
+                <p>Studi psikologis mengenai penyesalan di ujung usia tua (*Bronnie Ware, The Top Five Regrets of the Dying*) menunjukkan bahwa manusia paling menyesali hal-hal yang *tidak* mereka berani lakukan semasa hidupnya.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function filterCategory(category) {
+        // Update active button
+        const buttons = document.querySelectorAll('.filter-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+
+        // Filter cards
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
